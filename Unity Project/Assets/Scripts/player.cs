@@ -28,7 +28,9 @@ public class player : MonoBehaviour
     /// </summary>
     private void running()
     {
-        
+        print("水平"+Input.GetAxis("Horizontal"));
+        print("垂直" + Input.GetAxis("Vertical"));
+       
 
     }
     /// <summary>
@@ -36,14 +38,14 @@ public class player : MonoBehaviour
     /// </summary>
     private void jumpping()
     {
-    
+        if (Input.GetKeyDown(KeyCode.Space)) ;
     }
     /// <summary>
     /// 攻擊
     /// </summary>
     private void attacking()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Mouse0)) ;
     }
     /// <summary>
     /// 受傷
@@ -76,5 +78,12 @@ public class player : MonoBehaviour
 
     }
     #endregion
+
+    private void Update()
+    {
+        jumpping();
+        running();
+        attacking();
+    }
 }
 

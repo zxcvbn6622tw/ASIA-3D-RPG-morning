@@ -6,7 +6,7 @@ public class learnif : MonoBehaviour
     //if(布林值){陳述式或演算式}
 
     public bool opendoor;
-    public int combo=0;
+    public int combo = 0;
     public int attack = 10;
     private void Start()
     {
@@ -19,14 +19,14 @@ public class learnif : MonoBehaviour
 
     private void Update()
     {
-        if (opendoor)
-        {
-            print("開門");
-        }
+        /** if (opendoor)
+         {
+             print("開門");
+         }
 
-        else
-            print("關門");
-
+         else
+             print("關門");
+     **/
         if (combo >= 150)
         {
             print("攻擊增加10倍");
@@ -38,9 +38,9 @@ public class learnif : MonoBehaviour
         else
             print("攻擊沒增加");
     }
-    
- 
-        
- 
+
+
+
+
 
 }
